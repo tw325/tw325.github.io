@@ -1,1 +1,1 @@
-[tw325.github.io] (www.tw325.github.io)
+[check it out here](https://tw325.github.io/)
