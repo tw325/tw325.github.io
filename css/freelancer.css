@@ -39,7 +39,7 @@ hr.star-dark:after {
   background-color: white; }
 
 section {
-  padding: 5rem 0; }
+  padding: 3rem 0; }
   section h2 {
     font-size: 2.25rem;
     line-height: 2rem; }
@@ -70,8 +70,8 @@ section {
     line-height: 3.1rem; }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
   font-weight: 700;
   font-family: 'Montserrat'; }
   #mainNav .navbar-brand {
@@ -93,13 +93,13 @@ section {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s; }
     #mainNav .navbar-brand {
-      font-size: 2em;
+      font-size: 1.8em;
       -webkit-transition: font-size 0.3s;
       -moz-transition: font-size 0.3s;
       transition: font-size 0.3s; }
@@ -112,18 +112,18 @@ section {
         color: #fff;
         background: #18BC9C; }
   #mainNav.navbar-shrink {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; }
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem; }
     #mainNav.navbar-shrink .navbar-brand {
       font-size: 1.5em; } }
 
 header.masthead {
-  padding-top: calc(6rem + 72px);
-  padding-bottom: 6rem; }
+  padding-top: calc(2rem + 72px);
+  padding-bottom: 2rem; }
   header.masthead h1 {
     color: #2C3E50;
-    font-size: 3rem;
-    line-height: 3rem; }
+    font-size: 2/5rem;
+    line-height: 2.5rem; }
   header.masthead h2 {
     color: #2C3E50;
     font-size: 1.3rem;
@@ -131,15 +131,15 @@ header.masthead {
 
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(6rem + 106px);
-    padding-bottom: 6rem; }
+    padding-top: calc(2rem + 106px);
+    padding-bottom: 2rem; }
     header.masthead h1 {
       color: #2C3E50;
-      font-size: 4.75em;
-      line-height: 4rem; }
+      font-size: 3em;
+      line-height: 3rem; }
     header.masthead h2 {
       color: #2C3E50;
-      font-size: 1.75em; } }
+      font-size: 1.5em; } }
 
 .portfolio {
   margin-bottom: -15px; }
