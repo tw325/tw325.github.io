@@ -1,0 +1,25 @@
+.portrait { width: 82%; max-width: 380px; border-radius: 6px; }
+.project-section { padding: 3rem 0 4rem; border-top: 1px solid #e4e8eb; background: #f7f9fa; }
+.project-heading { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+.eyebrow { font-size: .8rem; text-transform: uppercase; letter-spacing: .14em; margin-bottom: .7rem; }
+.project-heading h2 { font-size: 2rem; }
+.project-intro { max-width: 760px; font-size: 1.1rem; line-height: 1.7; }
+.project-note { font-size: .85rem; color: #65727b; }
+.project-link { flex-shrink: 0; }
+.project-details { margin-top: 2rem; }
+.project-details h3 { font-size: 1.05rem; margin-bottom: .8rem; }
+.project-details p, .project-stack p { line-height: 1.7; }
+.project-stack { margin-top: 1rem; border-top: 1px solid #dce2e6; padding-top: 1rem; }
+.project-stack summary { cursor: pointer; font-weight: bold; padding: .4rem 0; }
+.project-stack p { max-width: 800px; margin-top: 1rem; }
+.project-gallery { margin: 2rem 0; }
+.project-gallery img { width: 100%; height: auto; border: 1px solid #dce2e6; border-radius: 6px; }
+.project-gallery figcaption { margin-top: .65rem; font-size: .9rem; color: #65727b; }
+a:focus-visible, summary:focus-visible { outline: 3px solid #147f6a; outline-offset: 4px; }
+@media (max-width: 767px) {
+  body > section:first-of-type { padding: 3rem 0; }
+  .portrait { margin-top: 1rem; }
+  .project-heading { display: block; }
+  .project-link { margin-bottom: 1.5rem; }
+  .project-details > div { margin-bottom: 1rem; }
+}
