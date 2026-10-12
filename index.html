@@ -30,127 +30,59 @@
   </head>
 
   <body id="page-top">
-    <!-- Header -->
-    <section class="text-secondary align-items-center text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-6">
-            <h3 class="text-uppercase mb-0">
-              <!-- <a href="index.html">Tyler Wang</a> -->
-              Tyler Wang
-            </h3>
-          </div>
-          <div class="col-md-6 col-lg-6">
-            <!-- <h1 class="text-uppercase mb-0">
-              <a href="projects.html">Coder.</a>
-              <a href="portfolio.html">Dancer.</a>
-              <a href="index.html">Rover.</a>
-            </h1> -->
-            <h3 class="text-uppercase mb-0">Coder. Dancer. Rover. </h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-6">
-            <hr class="star-dark">
-            <img class="img-fluid portrait mb-3 d-block mx-auto" src="img/tyler.jpeg" alt="Tyler Wang">
-            <div class= "container">
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-dark btn-social text-center rounded-circle" href="mailto:tyler.tianshi.wang@gmail.com" aria-label="Email Tyler">
-                    <i class="fa fa-fw fa-envelope"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-dark btn-social text-center rounded-circle" href="https://linkedin.com/in/tianshi-tyler-wang/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <i class="fa fa-fw fa-linkedin"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-dark btn-social text-center rounded-circle" href="https://github.com/tw325/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <i class="fa fa-fw fa-github-alt"></i>
-                  </a>
-                </li>
-              </ul>
+    <main class="portfolio">
+      <header class="page-heading">
+        <h1>Tyler Wang</h1>
+        <p>Coder. Dancer. Rover.</p>
+      </header>
+
+      <div class="profile-layout">
+        <aside class="profile" aria-label="Photo and contact links">
+          <img class="portrait" src="img/tyler.jpeg" alt="Tyler Wang enjoying hot pot" width="3527" height="3527">
+          <nav class="contact-links" aria-label="Get in touch">
+            <a href="mailto:tyler.tianshi.wang@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
+            <a href="https://linkedin.com/in/tianshi-tyler-wang/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+            <a href="https://github.com/tw325/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+          </nav>
+        </aside>
+
+        <div class="profile-content">
+          <section id="open-bell" class="current-project" aria-labelledby="project-title">
+            <h2 id="project-title">Building <a href="https://open-bell-watchlist.kingskytime.chatgpt.site" target="_blank" rel="noopener noreferrer">Open Bell <span aria-hidden="true">↗</span></a></h2>
+            <p>A personal stock research app that brings company fundamentals, valuation, and price history together. Screen for investing ideas, keep a watchlist, explore individual companies, and see how screen results change across saved market snapshots.</p>
+            <p class="tech-stack"><strong>The build:</strong> TypeScript and React for the interface, Neon Postgres for market snapshots, and Cloudflare Workers and Queues for background data refreshes. Yahoo Finance supplies the market data.</p>
+          </section>
+
+          <section class="career" aria-labelledby="career-title">
+            <h2 id="career-title" class="section-label">Previously</h2>
+            <div class="life-entry">
+              <div class="entry-heading"><h3><a href="https://about.meta.com/" target="_blank" rel="noopener noreferrer">Meta</a></h3><span class="dates">2022–2026</span></div>
+              <p>Senior Software Engineer</p>
+              <p class="entry-detail">Privacy &amp; Data Use · Groups &amp; Community Messaging</p>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-6">
-            <hr class="star-dark">
-            <hr class="star-light">
-            <p class="lead">
-              Building <a href="#open-bell">Open Bell</a>, a stock research app
-            </p>
-            <p class="lead">
-              Previously Senior Software Engineer @
-              <a href="https://about.meta.com/" target="_blank" rel="noopener noreferrer">Meta</a><br>
-              <small>Privacy &amp; Data Use · Groups &amp; Community Messaging · 2022–2026</small>
-            </p>
-            <p class="lead">
-              Software Engineer @
-              <a href="https://www.bloomberg.com/company/" target="_blank" rel="noopener noreferrer">Bloomberg</a><br>
-              <small>Multi-Asset Risk System · 2019–2022</small>
-            </p>
-            <p class="lead">
-              Software Engineering Intern @
-              <a href="https://www.wayfair.com/" target="_blank" rel="noopener noreferrer">Wayfair</a><br>
-              <small>2018</small>
-            </p>
-            <p class="lead">
-              CS ’19 @
-              <a href="https://www.cs.cornell.edu/" target="_blank" rel="noopener noreferrer">Cornell</a>
-            </p>
-          </div>
-          <div class="col-md-6 col-lg-6">
-            <hr class="star-dark">
-          </div>
-          <div class="col-md-6 col-lg-6">
-            <hr class="star-dark">
-          </div>
+            <div class="life-entry">
+              <div class="entry-heading"><h3><a href="https://www.bloomberg.com/company/" target="_blank" rel="noopener noreferrer">Bloomberg</a></h3><span class="dates">2019–2022</span></div>
+              <p>Software Engineer</p>
+              <p class="entry-detail">Multi-Asset Risk System</p>
+            </div>
+            <div class="life-entry">
+              <div class="entry-heading"><h3><a href="https://www.wayfair.com/" target="_blank" rel="noopener noreferrer">Wayfair</a></h3><span class="dates">2018</span></div>
+              <p>Software Engineering Intern</p>
+            </div>
+          </section>
 
+          <section class="education" aria-labelledby="education-title">
+            <h2 id="education-title" class="section-label">Education</h2>
+            <div class="life-entry">
+              <div class="entry-heading"><h3><a href="https://www.cs.cornell.edu/" target="_blank" rel="noopener noreferrer">Cornell University</a></h3><span class="dates">Class of 2019</span></div>
+              <p>B.S. Computer Science</p>
+            </div>
+            <div class="life-entry">
+              <div class="entry-heading"><h3>Stuyvesant High School</h3><span class="dates">Class of 2015</span></div>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
-
-    <section id="open-bell" class="project-section text-secondary" aria-labelledby="project-title">
-      <div class="container">
-        <div class="project-heading">
-          <div>
-            <p class="eyebrow">What I’m building</p>
-            <h2 id="project-title">Open Bell</h2>
-            <p class="lead">A clearer starting point for stock research.</p>
-          </div>
-          <a class="btn btn-outline-dark project-link" href="https://open-bell-watchlist.kingskytime.chatgpt.site" target="_blank" rel="noopener noreferrer">Explore the app <span aria-hidden="true">↗</span></a>
-        </div>
-        <p class="project-intro">Open Bell brings company fundamentals, valuation, and price history into one place. Start with an investing idea, narrow the field, and dig into the companies that match.</p>
-        <div class="row project-details">
-          <div class="col-md-4">
-            <h3>Find companies</h3>
-            <p>Explore preset screens or adjust growth, profitability, valuation, and drawdown filters. Keep a personal watchlist for companies worth following.</p>
-          </div>
-          <div class="col-md-4">
-            <h3>Look closer</h3>
-            <p>Open a company’s research page for financials and price charts, or replay a screen across saved snapshots to see how its results changed.</p>
-          </div>
-          <div class="col-md-4">
-            <h3>Behind the scenes</h3>
-            <p>I built the interface and data pipeline, with saved market snapshots in Postgres and queued background refreshes. The app makes stale or missing data visible.</p>
-          </div>
-        </div>
-        <details class="project-stack">
-          <summary>A little more about the build</summary>
-          <p>TypeScript and React power the interface. Neon stores the market snapshots, while Cloudflare Workers and Queues coordinate ingestion. The screener reads saved data; individual company pages fetch additional Yahoo Finance data on demand.</p>
-          <p>This is a personal research prototype. Historical replay covers the retained snapshot window rather than a full historical backtest.</p>
-        </details>
-      </div>
-    </section>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
+    </main>
   </body>
-
 </html>

@@ -1,25 +1,40 @@
-.portrait { width: 82%; max-width: 380px; border-radius: 6px; }
-.project-section { padding: 3rem 0 4rem; border-top: 1px solid #e4e8eb; background: #f7f9fa; }
-.project-heading { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
-.eyebrow { font-size: .8rem; text-transform: uppercase; letter-spacing: .14em; margin-bottom: .7rem; }
-.project-heading h2 { font-size: 2rem; }
-.project-intro { max-width: 760px; font-size: 1.1rem; line-height: 1.7; }
-.project-note { font-size: .85rem; color: #65727b; }
-.project-link { flex-shrink: 0; }
-.project-details { margin-top: 2rem; }
-.project-details h3 { font-size: 1.05rem; margin-bottom: .8rem; }
-.project-details p, .project-stack p { line-height: 1.7; }
-.project-stack { margin-top: 1rem; border-top: 1px solid #dce2e6; padding-top: 1rem; }
-.project-stack summary { cursor: pointer; font-weight: bold; padding: .4rem 0; }
-.project-stack p { max-width: 800px; margin-top: 1rem; }
-.project-gallery { margin: 2rem 0; }
-.project-gallery img { width: 100%; height: auto; border: 1px solid #dce2e6; border-radius: 6px; }
-.project-gallery figcaption { margin-top: .65rem; font-size: .9rem; color: #65727b; }
-a:focus-visible, summary:focus-visible { outline: 3px solid #147f6a; outline-offset: 4px; }
+body { background: #fcfbf8; color: #2c3e50; -webkit-font-smoothing: antialiased; }
+.portfolio { width: min(1080px, calc(100% - 64px)); margin: 0 auto; padding: 64px 0 72px; }
+.page-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding-bottom: 28px; margin-bottom: 36px; border-bottom: 1px solid #dedfd9; }
+.page-heading h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); letter-spacing: -.045em; margin: 0; }
+.page-heading p { margin: 0; color: #65716f; font-size: 1rem; letter-spacing: .025em; }
+.profile-layout { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.2fr); gap: 64px; align-items: start; }
+.portrait { width: 100%; height: auto; display: block; border-radius: 12px; box-shadow: 0 8px 30px #263a3010; }
+.contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 22px; padding: 22px 0; }
+a { color: #216d5b; text-underline-offset: 4px; }
+a:hover, a:focus { color: #154b3e; }
+.contact-links a { font-size: .9rem; }
+.contact-links i { margin-right: 5px; }
+.profile-content section { padding: 0; }
+.profile-content .current-project { padding: 0 0 28px; }
+.current-project h2 { font-size: 1.45rem; line-height: 1.4; letter-spacing: -.025em; margin: 0 0 15px; }
+.current-project h2 a { text-decoration: underline; text-decoration-thickness: 1px; }
+.current-project h2 span { font-size: 1rem; }
+.current-project p { font-size: 1rem; line-height: 1.75; margin: 0 0 14px; }
+.current-project .tech-stack { color: #5b686b; font-size: .92rem; margin-bottom: 0; }
+.tech-stack strong { font-weight: 700; color: #405354; }
+.profile-content .career, .profile-content .education { padding-top: 24px; border-top: 1px solid #dedfd9; }
+.profile-content .education { margin-top: 24px; }
+.profile-content .section-label { font-size: .72rem; letter-spacing: .15em; text-transform: uppercase; color: #687775; margin: 0 0 20px; }
+.life-entry + .life-entry { margin-top: 22px; }
+.entry-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.entry-heading h3 { font-size: 1rem; line-height: 1.5; margin: 0; letter-spacing: -.02em; }
+.entry-heading h3 a { color: inherit; }
+.dates { font-size: .8rem; color: #687775; white-space: nowrap; }
+.life-entry p { margin: 3px 0 0; font-size: .94rem; line-height: 1.5; }
+.life-entry .entry-detail { font-size: .82rem; color: #687775; }
+a:focus-visible { outline: 3px solid #b37a25; outline-offset: 5px; border-radius: 2px; }
 @media (max-width: 767px) {
-  body > section:first-of-type { padding: 3rem 0; }
-  .portrait { margin-top: 1rem; }
-  .project-heading { display: block; }
-  .project-link { margin-bottom: 1.5rem; }
-  .project-details > div { margin-bottom: 1rem; }
+  .portfolio { width: calc(100% - 40px); max-width: 560px; padding: 32px 0 48px; }
+  .page-heading { display: block; margin-bottom: 26px; padding-bottom: 20px; }
+  .page-heading p { margin-top: 7px; font-size: .9rem; }
+  .profile-layout { grid-template-columns: 1fr; gap: 22px; }
+  .profile { width: 100%; max-width: 380px; margin: 0 auto; }
+  .contact-links { padding-bottom: 8px; }
+  .entry-heading { flex-wrap: wrap; gap: 2px 12px; }
 }
